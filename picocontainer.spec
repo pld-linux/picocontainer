@@ -2,6 +2,7 @@
 # - build from src
 %include	/usr/lib/rpm/macros.java
 Summary:	Small footprint Dependency Injection container
+Summary(pl.UTF-8):	Kontener Dependency Injection o małym narzucie
 Name:		picocontainer
 Version:	1.3
 Release:	0.1
@@ -24,6 +25,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 PicoContainer is a lightweight and highly embeddable container for
 components that honour Dependency Injection.
 
+%description -l pl.UTF-8
+PicoContainer to lekki i dobrze osadzalny kontener dla komponentów
+honorujących Dependency Injection.
+
 %package javadoc
 Summary:	Online manual for %{name}
 Summary(pl.UTF-8):	Dokumentacja online do %{name}
@@ -31,10 +36,10 @@ Group:		Documentation
 Requires:	jpackage-utils
 
 %description javadoc
-Documentation for %{name}
+Documentation for %{name}.
 
 %description javadoc -l pl.UTF-8
-Dokumentacja do %{name}
+Dokumentacja do %{name}.
 
 %prep
 %setup -qc

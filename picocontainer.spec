@@ -1,6 +1,5 @@
 # TODO
 # - build from src
-%include	/usr/lib/rpm/macros.java
 Summary:	Small footprint Dependency Injection container
 Summary(pl.UTF-8):	Kontener Dependency Injection o małym narzucie
 Name:		picocontainer
